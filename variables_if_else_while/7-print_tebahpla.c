@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char
+int
 main(void)
 {
 char c;
