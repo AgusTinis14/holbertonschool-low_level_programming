@@ -8,7 +8,7 @@ while (c != 'g')
 {
 if (c <= '9')
 {
-for (c = '0'; c < '9'; ++c)
+for (c = '0'; c <= '9'; ++c)
 putchar(c);
 }
 else
