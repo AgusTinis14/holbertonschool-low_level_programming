@@ -3,10 +3,9 @@
 int
 _islower(int c)
 {
-int c;
-if (c >= 96 && c <= 123)
-c = 1;
+	int a;
+if (c > 96 && c < 123)
+	return (1);
 else
-c = 0;
-return (c);
+return (0);
 }
