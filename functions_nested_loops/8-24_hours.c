@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void jack_bauer(void)
+int
+jack_bauer(void)
 {
 int hour, minute;
 for (hour = 0; hour < 24; hour++)
