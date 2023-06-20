@@ -1,23 +1,21 @@
 #include "main.h"
 
-int
-print_sign(int n)
+void
+more_numbers(void)
 {
-int r;
-if (n == 0)
-{
-r = 0;
-_putchar('0');
-}
-if (n > 0)
-{
-r = 1;
-_putchar('+');
-}
-if (n < 0)
-{
-r = -1;
-_putchar('-');
-}
-return (r);
+	int i;
+	int n1;
+
+	for (i = 0; i <= 9; i++)
+	{
+		for (n1 = 0; n1 <= 14; n1++)
+		{
+			if (n1 >= 10)
+			{
+				_putchar((n1 / 10) + '0');
+			}
+			_putchar((n1 % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
