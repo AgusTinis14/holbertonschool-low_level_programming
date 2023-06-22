@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * reset to 98 
+ * reset_to_98 - main function
+ * @n: adress of n
  */
 void reset_to_98(int *n)
 {
