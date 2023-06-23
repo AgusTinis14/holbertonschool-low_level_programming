@@ -9,7 +9,7 @@ rev_string(char *s)
 	char mario[1000];
 
 	a = 0;
-	for (n = 0; s[n]; a++)
+	for (n = 0; s[n]; n++)
 	{
 		continue;
 	}
