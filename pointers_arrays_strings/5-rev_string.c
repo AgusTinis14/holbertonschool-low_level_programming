@@ -5,7 +5,7 @@ rev_string(char *s)
 {
 int n;
 int a;
-char mario;
+char mario[1000];
 
 n = 0
 for (n = 0; s[a]; a++)
