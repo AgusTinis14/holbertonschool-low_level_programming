@@ -19,6 +19,6 @@ rev_string(char *s)
 		mario[a] = s[n];
 		a++;
 	}
-	for (n = 0; s[n]; a++)
-		s[a] = mario[a];
+	for (n = 0; s[n]; n++)
+		s[n] = mario[n];
 	}
