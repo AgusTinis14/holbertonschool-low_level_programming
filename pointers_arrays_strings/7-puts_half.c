@@ -1,7 +1,7 @@
 #include "main.h"
 
 void
-puts_half(char *str);
+puts_half(char *str)
 {
 	int i;
 	int n;
