@@ -21,5 +21,5 @@ puts_half(char *str)
 		for (; n <= i; n++)
 			_putchar(str[n]);
 	}
-	_putchar('\n')
-	}
+	_putchar('\n');
+}
