@@ -8,13 +8,13 @@ rev_string(char *s)
 	int a;
 	char mario[1000];
 
-	n = 0;
-	for (n = 0; s[a]; a++)
+	a = 0;
+	for (n = 0; s[n]; a++)
 	{
 		continue;
 	}
 	n -= 1;
-	for (; s[a]; n--)
+	for (; s[n]; n--)
 	{
 		mario[a] = s[n];
 		a++;
