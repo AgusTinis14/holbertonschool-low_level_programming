@@ -7,7 +7,7 @@ int n;
 int a;
 char mario[1000];
 
-n = 0
+n = 0;
 for (n = 0; s[a]; a++)
 {
 	continue;
