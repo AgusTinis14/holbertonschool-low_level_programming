@@ -5,14 +5,13 @@ char
 *_strncat(char *dest, char *src, int n)
 	{
 		int c;
+		int s;
 		
-		for (c = 1; dest[c] != '\0'; c++)
+		for (c = 0; dest[c] != '\0'; c++)
 				;
-		for (n = 1; src[n] != '\0'; n++)
+		for (n = 0; src[n] != '\0' && n > 0; s++, n--, c++)
 		{
 			dest[c] = src[n];
-			c++;
 		}
-		dest[c] = '\0';
 		return (dest);
 	}
