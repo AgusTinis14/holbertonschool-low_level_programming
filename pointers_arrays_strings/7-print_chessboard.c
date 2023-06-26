@@ -4,14 +4,14 @@
 void
 print_chessboard(char (*a)[8])
 {
-int n, u;
+int b, c;
 
-for (n = 0; u < 8; n++)
+for (b = 0; b < 8; b++)
 {
-for (u = 0; u < 8; u++)
+for (c = 0; c < 8; c++)
 {
-_putchar(a[n][u]);
-if (u == 7)
+_putchar(a[b][c]);
+if (c == 7)
 {
 _putchar('\n');
 }
