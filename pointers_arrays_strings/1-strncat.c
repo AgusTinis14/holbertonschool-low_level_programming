@@ -8,9 +8,10 @@ char
 	int s;
 
 	for (c = 0; dest[c] != '\0'; c++)
-	for (n = 0; src[n] != '\0' && n > 0; s++, n--, c++)
+		;
+	for (s = 0; src[s] != '\0' && n > 0; s++, n--, c++)
 	{
-		dest[c] = src[n];
+		dest[c] = src[s];
 	}
 	return (dest);
 }
