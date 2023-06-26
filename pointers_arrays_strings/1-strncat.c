@@ -6,9 +6,9 @@ char
 	{
 		int c;
 		
-		for (c = 0; dest[c] != '\0'; c++)
+		for (c = 1; dest[c] != '\0'; c++)
 				;
-		for (n = 0; src[n] != '\0'; n++)
+		for (n = 1; src[n] != '\0'; n++)
 		{
 			dest[c] = src[n];
 			c++;
