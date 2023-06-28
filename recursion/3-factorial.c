@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int
-int factorial(int n)
+factorial(int n)
 {
 	if (n == 1 || n == 0)
 	{
