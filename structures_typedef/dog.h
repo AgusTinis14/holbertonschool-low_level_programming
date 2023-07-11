@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
+#ifndef DOG.H
+#define DOG.H
 
 typedef struct dog
 {
