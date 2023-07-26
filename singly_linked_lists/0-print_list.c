@@ -1,24 +1,24 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 
-size_t
-print_list(const list_t *h)
+/**
+* print_list - print all elements of `list_t` list
+* @h: head of linked list
+* Return: number of nodes
+*/
+size_t print_list(const list_t *h)
 {
-	size_t node_count = 0;
-	const char* nill = "[0] (nil)";
-	const list_t *current = h;
+	const list_t *current;
+	size_t c;
 
-	while (current != NULL) {
-	node_count++;
-	if (current->str == NULL) {
-		printf("%s\n", nil);
-	} else {
+	c = 0;
+	current = h;
+	while (current != NULL)
+	{
 		printf("[%d] %s\n", current->len, current->str);
+		current = current->next;
+		c++;
 	}
-	
-	current = current->next;
-	}
-	return(node_count);
+
+	return (c);
 }
