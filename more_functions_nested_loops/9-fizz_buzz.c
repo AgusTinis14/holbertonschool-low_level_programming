@@ -1,20 +1,27 @@
 #include "main.h"
-
-void
-print_square(int size)
+#include <stdio.h>
+/**
+* main - Print 0 to 100
+* Return: Always 0.
+*/
+int main(void)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	if (size > 0)
+	while (i < 100)
 	{
-		for (i = 0; i < size; i++)
-		{
-			for (j = 0; j < size; j++)
-				_putchar(35);
-			_putchar('\n');
-		}
+		i++;
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+		if (i != 100)
+			printf(" ");
 	}
-	if (size <= 0)
-		_putchar('\n');
+	printf("\n");
+	return (0);
 }
